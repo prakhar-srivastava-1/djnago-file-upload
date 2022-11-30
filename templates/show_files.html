@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>File Upload Azure</title>
+    </head>
+    <body>  
+        <h2>MEDIA directory</h2>
+        <h4>{{media_dir}}</h4>
+        <table border="1">
+        {% for file in file_list %}
+            <tr>
+                <td style="padding:10px;">{{file}}</td>
+            </tr>
+        {% endfor %}
+        </table> 
+        <br>
+        <a href="{% url 'home' %}">upload another</a>  
+    </body>  
+</html>

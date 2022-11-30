@@ -20,7 +20,8 @@ from . import views
 from django.conf import settings
 
 urlpatterns = [
-    path('', views.home, name="home")
+    path('', views.home, name="home"),
+    path('show_files/', views.show_files, name="show_files")
 ]
 urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
